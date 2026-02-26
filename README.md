@@ -9,6 +9,6 @@ This is script for installing Tomcat 9 in your Redhat machine and Ubuntu machine
 
 Logins for manager and Hostmanager is:
 
-**User:\tadmin**
+**User:      admin**
 
-**Password:\tadmin**
+**Password:  admin**
