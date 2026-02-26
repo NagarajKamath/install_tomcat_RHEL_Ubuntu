@@ -8,7 +8,7 @@ echo "Initiating Tomcat Installation."
 echo "Please enter the port number (use between 2 and 65535):"
 read port
 
-echo -e "Thank you for selecting port: $port \nInstalling Tomcat 11 with Java OpenJDK 25 on $distro..."
+echo -e "\nThank you for selecting port: $port \n\n\nInstalling Tomcat 11 with Java OpenJDK 25 on $distro..."
 
 sudo systemctl stop tomcat 2>/dev/null
 
