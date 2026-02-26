@@ -1,5 +1,7 @@
 #!/bin/bash
 
+path=$(pwd)
+
 distro=$(cat /etc/os-release | grep "^ID=" | cut -d "=" -f2 | sed 's/"//g')
 
 echo "Initiating Tomcat Installation."
@@ -44,7 +46,6 @@ sudo chmod -R 755 /opt/tomcat > /dev/null
 
 sudo sed -i "s/port=\"8080\"/port=\"$port\"/" /opt/tomcat/conf/server.xml
 
-path=$(pwd)
 
 sudo cp "$path/tomcat.service" /etc/systemd/system/tomcat.service > /dev/null
 sudo cp "$path/tomcat-users.txt" /opt/tomcat/conf/tomcat-users.xml > /dev/null
