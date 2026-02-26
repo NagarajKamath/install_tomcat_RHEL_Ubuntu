@@ -61,7 +61,7 @@ sudo systemctl start tomcat > /dev/null
 echo ""
 echo "Tomcat installed successfully on $distro"
 echo "                 ################################"
-echo -e "Access it using: # http://$(curl -s ifconfig.me):8080\t#"
+echo -e "Access it using: # http://$(curl -s ifconfig.me):$port\t#"
 echo "                 ################################"
 
 echo -e "\nTo access Manager and Host-manager, you can use: \nUser:\t\tadmin \nPassword: \tadmin\n"
