@@ -1,6 +1,6 @@
-# install-tomcat-9-RHEL
+# install-tomcat-9-RHEL-and-Ubuntu
 
-This is script for installing Tomcat 9 in your Redhat machine with manager and host-manager enabled and it will let you install tomcat on desired port. You can just run this command to install tomcat automatically:
+This is script for installing Tomcat 9 in your Redhat machine and Ubuntu machine with manager and host-manager enabled and it will let you install tomcat on desired port. You can just run this command to install tomcat automatically:
 
 **cd;sudo yum install git -y > /dev/null;git clone https://github.com/NagarajKamath/install_tomcat_RHEL_Ubuntu.git > /dev/null;cd install_tomcat_RHEL;bash tomcat.sh**
 
