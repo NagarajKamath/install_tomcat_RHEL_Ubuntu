@@ -35,7 +35,7 @@ fi
 sudo useradd -m -U -d /opt/tomcat -s /bin/false tomcat > /dev/null
 
 cd /tmp
-wget https://dlcdn.apache.org/tomcat/tomcat-11/v11.0.18/bin/apache-tomcat-11.0.18.tar.gz > /dev/null
+wget https://dlcdn.apache.org/tomcat/tomcat-11/v11.0.18/bin/apache-tomcat-11.0.18.tar.gz &> /dev/null
 
 sudo mkdir -p /opt/tomcat
 sudo tar xf apache-tomcat-11.0.18.tar.gz -C /opt/tomcat --strip-components=1 > /dev/null
@@ -53,7 +53,7 @@ sudo cp "$path/context.txt" /opt/tomcat/webapps/manager/META-INF/context.xml > /
 sudo cp "$path/context.txt" /opt/tomcat/webapps/host-manager/META-INF/context.xml > /dev/null
 
 sudo systemctl daemon-reload > /dev/null
-sudo systemctl enable tomcat > /dev/null
+sudo systemctl enable tomcat &> /dev/null
 sudo systemctl start tomcat > /dev/null
 
 public_ip=$(curl -s ifconfig.me)
